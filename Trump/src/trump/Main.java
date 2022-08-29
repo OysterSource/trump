@@ -13,5 +13,9 @@ public class Main {
 		System.out.println(card1.face());
 		System.out.println(card2.face());
 		System.out.println(card3.face());
+
+		deck.build();
+		deck.add();
+		deck.draw();
 	}
 }
