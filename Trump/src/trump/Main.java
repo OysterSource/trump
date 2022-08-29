@@ -9,5 +9,4 @@ public class Main {
 		Card card = new Card();
 
 	}
-
 }
