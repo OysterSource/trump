@@ -13,4 +13,5 @@ public class Card {
 	public String face() { // カードを表す文字列を返す
 		return mark + "/" + number;
 	}
+
 }
