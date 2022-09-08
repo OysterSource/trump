@@ -13,49 +13,30 @@ public class Deck {
 	}
 
 	public void build() {
-
 		//52枚のカードアレイリストに入れる
 		System.out.println("ビルド" + "52枚のカードアレイリストに入れる");
-		for(int i = 1; i < 14; i++) {
-			Card card1 = new Card("スペード", i);
-			Card card2 = new Card("ハート", i);
-			Card card3 = new Card("ダイヤ", i);
-			Card card4 = new Card("クラブ", i);
 
-			Deck.add(card1);
-			Deck.add(card2);
-			Deck.add(card3);
-			Deck.add(card4);
-		}
-		System.out.println(cardList);
-
-	}
-	/* String[] array =
-	 * 
-	 * /* System.out.println("add");
-	 * 
-	 * cardList.add(card1);
-	 * 
-	 * cardList.add(card2);
-	 * 
-	 * cardList.add(card3);
-	 * 
-	 * cardList.add(card4); */
-	/* String[] array = { "スペード", "ハート", "ダイヤ", "クラブ" };
-	 * for(int i = 1; i < 14; i++) {
-	 * Card card1 = new Card("スペード", i);
-	 * Card card2 = new Card("ハート", i);
-	 * Card card3 = new Card("ダイヤ", i);
-	 * Card card4 = new Card("クラブ", i);
-	 * //faceメソッドをよびだしてコンソールに表示する
-	 * System.out.println(card1.face());
-	 * System.out.println(card2.face());
-	 * System.out.println(card3.face());
-	 * System.out.println(card4.face());
-	 * } */
-
-	private static void add(Card card1) {
-		// ここにコードを挿入
+		/* System.out.println("add");
+		 * 
+		 * cardList.add(card1);
+		 * 
+		 * cardList.add(card2);
+		 * 
+		 * cardList.add(card3);
+		 * 
+		 * cardList.add(card4); */
+		/* String[] array = { "スペード", "ハート", "ダイヤ", "クラブ" };
+		 * for(int i = 1; i < 14; i++) {
+		 * Card card1 = new Card("スペード", i);
+		 * Card card2 = new Card("ハート", i);
+		 * Card card3 = new Card("ダイヤ", i);
+		 * Card card4 = new Card("クラブ", i);
+		 * //faceメソッドをよびだしてコンソールに表示する
+		 * System.out.println(card1.face());
+		 * System.out.println(card2.face());
+		 * System.out.println(card3.face());
+		 * System.out.println(card4.face());
+		 * } */
 
 	}
 
@@ -64,14 +45,15 @@ public class Deck {
 		Collections.shuffle(cardList);
 	}
 
-	/* public void add(Card card) {
-	 * System.out.println("add");
-	 * this.cardList.add(card);
-	 * }
-	 * 
-	 * public Card draw() {
-	 * System.out.println("ドロー");
-	 * return cardList.get(0); */
+	public void add(Card card) {
+		System.out.println("add");
+		this.cardList.add(card);
+	}
+
+	public Card draw() {
+		System.out.println("ドロー");
+		return cardList.get(0);
+	}
 }
 
 // ここにコードを挿入
