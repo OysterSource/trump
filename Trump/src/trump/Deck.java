@@ -21,10 +21,13 @@ public class Deck {
 			Card card2 = new Card("ハート", i);
 			Card card3 = new Card("ダイヤ", i);
 			Card card4 = new Card("クラブ", i);
-			
+
 			Deck.add(card1);
+			Deck.add(card2);
+			Deck.add(card3);
+			Deck.add(card4);
 		}
-		System.out.println();
+		System.out.println(cardList);
 
 	}
 	/* String[] array =
@@ -55,12 +58,12 @@ public class Deck {
 		// ここにコードを挿入
 
 	}
- public void shuffle() {
-	  System.out.println("ｼｬｯﾌﾙ");
-	  Collections.shuffle(cardList);
-	  }
-	  
-	 
+
+	public void shuffle() {
+		System.out.println("ｼｬｯﾌﾙ");
+		Collections.shuffle(cardList);
+	}
+
 	/* public void add(Card card) {
 	 * System.out.println("add");
 	 * this.cardList.add(card);
