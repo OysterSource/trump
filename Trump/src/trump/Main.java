@@ -35,7 +35,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Card cardB = new Card("スペード", 6);
+		Card cardB = new Card("スペード", 10);
 		Card cardJ = new Card("ハート", 2);
 		System.out.println(cardB.face());
 		System.out.println(cardJ.face());

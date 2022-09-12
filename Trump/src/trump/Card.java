@@ -18,12 +18,13 @@ public class Card {
 	}
 
 	public int compareTo(Card cardB) {
-		// ここにコードを挿入
-		return 1;
-	}
+		if(this.number > cardB.number) {
+			return -1;
+		} else if(this.number < cardB.number) {
+			return 1;
+		} else {
+			return 0;
+		}
 
-	public static int compareTo1(Card cardJ, Card cardB) {
-		// ここにコードを挿入
-		return -1;
 	}
 }
