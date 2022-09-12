@@ -35,10 +35,14 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		Card cardB = new Card("スペード", 10);
-		Card cardJ = new Card("ハート", 3);
+		Card cardB = new Card("スペード", 6);
+		Card cardJ = new Card("ハート", 2);
+		System.out.println(cardB.face());
+		System.out.println(cardJ.face());
 
-		int cardx =cardB.compareTo(cardJ);
-		int cardy =Card.compareTo()
+		System.out.println(cardB.compareTo(cardJ));
+		System.out.println(cardJ.compareTo(cardB));
+		System.out.println(cardB.compareTo(cardB));
+
 	}
 }
