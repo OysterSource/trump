@@ -45,4 +45,14 @@ public class Main {
 		System.out.println("カードBとカードBを比べる" + ":" + cardB.compareTo(cardB));
 
 	}
+
+	public static void main3(String[] args) {
+		Card cardX = new Card("ハート", 6);
+		Card cardY = new Card("ハート", 4);
+		System.out.println(cardX.face());
+		System.out.println(cardY.face());
+
+		System.out.println(cardX.compareTo(cardY));
+
+	}
 }

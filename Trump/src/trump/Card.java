@@ -29,4 +29,11 @@ public class Card {
 			return 0;
 		}
 	}
+
+	public String compareTo1(Card cardX) {
+		if(this.mark == cardX.mark) {
+
+		}
+		return mark;
+	}
 }
