@@ -19,12 +19,14 @@ public class Card {
 
 	public int compareTo(Card cardB) {
 		if(this.number > cardB.number) {
+			System.out.println("Bの負け");
 			return -1;
 		} else if(this.number < cardB.number) {
+			System.out.println("Bの勝ち");
 			return 1;
 		} else {
+			System.out.println("引き分け");
 			return 0;
 		}
-
 	}
 }

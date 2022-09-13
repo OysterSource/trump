@@ -37,12 +37,12 @@ public class Main {
 	public static void main(String[] args) {
 		Card cardB = new Card("スペード", 10);
 		Card cardJ = new Card("ハート", 2);
-		System.out.println(cardB.face());
-		System.out.println(cardJ.face());
+		System.out.println("元にするカード:" + cardB.face());
+		System.out.println("比べられるカード:" + cardJ.face());
 
-		System.out.println(cardB.compareTo(cardJ));
-		System.out.println(cardJ.compareTo(cardB));
-		System.out.println(cardB.compareTo(cardB));
+		System.out.println("カードBを元にする" + ":" + cardB.compareTo(cardJ));
+		System.out.println("カードJを元にする" + ":" + cardJ.compareTo(cardB));
+		System.out.println("カードBとカードBを比べる" + ":" + cardB.compareTo(cardB));
 
 	}
 }
