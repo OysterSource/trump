@@ -17,15 +17,12 @@ public class Card {
 		return this.mark + "/" + this.number;
 	}
 
-	public int compareTo(Card cardB) {
-		if(this.number > cardB.number) {
-			System.out.println("Bの負け");
+	public int compareTo(Card card) {
+		if(this.number < card.number) {
 			return -1;
-		} else if(this.number < cardB.number) {
-			System.out.println("Bの勝ち");
+		} else if(this.number > card.number) {
 			return 1;
 		} else {
-			System.out.println("引き分け");
 			return 0;
 		}
 	}

@@ -37,13 +37,32 @@ public class Main {
 	public static void main(String[] args) {
 		Card cardB = new Card("スペード", 10);
 		Card cardJ = new Card("ハート", 2);
-		System.out.println("元にするカード:" + cardB.face());
-		System.out.println("比べられるカード:" + cardJ.face());
+		System.out.println("カードB:" + cardB.face());
+		System.out.println("カードJ:" + cardJ.face());
 
-		System.out.println("カードBを元にする" + ":" + cardB.compareTo(cardJ));
-		System.out.println("カードJを元にする" + ":" + cardJ.compareTo(cardB));
-		System.out.println("カードBとカードBを比べる" + ":" + cardB.compareTo(cardB));
+		int v = cardB.compareTo(cardJ);
+		System.out.println("カードBを元にする");
+		if(v == -1) {
+			System.out.println(v + ":" + "負け");
+		} else if(v == 1) {
+			System.out.println(v + ":" + "勝ち");
+		} else if(v == 0) {
+			System.out.println(v + ":" + "引き分け");
+		} else {
+		}
 
+		Card cardK = new Card("ハート", 12);
+		System.out.println("カードK:" + cardK.face());
+		int r = cardB.compareTo(cardK);
+		System.out.println("カードBを元にする");
+		if(r == -1) {
+			System.out.println(r + ":" + "負け");
+		} else if(r == 1) {
+			System.out.println(r + ":" + "勝ち");
+		} else if(r == 0) {
+			System.out.println(r + ":" + "引き分け");
+		} else {
+		}
 	}
 
 	public static void main3(String[] args) {
@@ -51,7 +70,6 @@ public class Main {
 		Card cardY = new Card("ハート", 4);
 		System.out.println(cardX.face());
 		System.out.println(cardY.face());
-
 		System.out.println(cardX.compareTo(cardY));
 
 	}
