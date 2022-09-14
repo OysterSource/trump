@@ -2,14 +2,13 @@ package trump;
 
 public class Main {
 
-	public static void main2(String[] args) {
+	public static void main1(String[] args) {
 		// デッキのインスタンス化
 		System.out.println("hellow word");
 		Deck deck = new Deck();
 
 		//デッキクラスでビルドしたものを呼び出す
 		deck.build();
-
 		//山札の後ろから1枚引いてシャッフルしてもう2枚引く
 		deck.shuffle();
 		Card card5 = deck.draw();
@@ -34,7 +33,7 @@ public class Main {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main2(String[] args) {
 		Card cardB = new Card("スペード", 10);
 		Card cardJ = new Card("ハート", 2);
 		System.out.println("カードB:" + cardB.face());
@@ -63,14 +62,44 @@ public class Main {
 			System.out.println(r + ":" + "引き分け");
 		} else {
 		}
-	}
 
-	public static void main3(String[] args) {
 		Card cardX = new Card("ハート", 6);
-		Card cardY = new Card("ハート", 4);
+		Card cardY = new Card("スペード", 4);
 		System.out.println(cardX.face());
 		System.out.println(cardY.face());
-		System.out.println(cardX.compareTo(cardY));
+		boolean p = cardX.equals(cardY);
+		if(p == true) {
+			System.out.println(p + ":" + "1");
+		} else if(p == false) {
+			System.out.println(p + ":" + "0");
+		} else {
 
+		}
+		System.out.println("指定したカードから数字を抜く");
+		Card cardU = new Card("対象のカード：" + "スペード", 4);
+		System.out.println(cardU.face());
+		int n = cardU.getNumber();
+		System.out.println("抜かれた数字：" + n);
+	}
+
+	public static void main(String[] args) {
+		System.out.println("hellow");
+		Deck deck = new Deck();
+		deck.build();
+		deck.shuffle();
+		Card cardF = deck.draw();
+		Card cardS = deck.draw();
+		System.out.println(cardF.face());
+		System.out.println(cardS.face());
+		int z = cardF.compareTo(cardS);
+		System.out.println("カードFを元にする");
+		if(z == -1) {
+			System.out.println(z + ":" + "負け");
+		} else if(z == 1) {
+			System.out.println(z + ":" + "勝ち");
+		} else if(z == 0) {
+			System.out.println(z + ":" + "引き分け");
+		} else {
+		}
 	}
 }

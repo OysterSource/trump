@@ -27,10 +27,28 @@ public class Card {
 		}
 	}
 
-	public String compareTo1(Card cardX) {
-		if(this.mark == cardX.mark) {
-
+	public boolean compareMark(Card card) {
+		if(this.mark == card.mark) {
+			return true;
+		} else if(this.mark != card.mark) {
+			return false;
+		} else {
+			return false;
 		}
-		return mark;
 	}
+
+	public int getNumber() {
+		return this.number;
+	}
+
+	public int compareTo1(Card card) {
+		if(this.number < card.number) {
+			return -1;
+		} else if(this.number > card.number) {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
 }
