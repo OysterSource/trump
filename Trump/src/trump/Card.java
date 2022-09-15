@@ -51,4 +51,23 @@ public class Card {
 		}
 	}
 
+	public static boolean hasOnePair(Card card) {
+		if(card.mark == card.mark) {
+			return true;
+		} else if(card.mark != card.mark) {
+			return false;
+		} else {
+			return false;
+		}
+	}
+
+	public static boolean hasTwoPair(Card Mycard) {
+		if(Mycard.mark == Mycard.mark) {
+			return true;
+		} else if(Mycard.mark != Mycard.mark) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }

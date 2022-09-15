@@ -16,7 +16,7 @@ public class Deck {
 	public void build() {
 		//52枚のカードアレイリストに入れる
 		System.out.println("ビルド" + "54枚のカードアレイリストに入れる");
-		for(int i = 1; i < 14; i++) {
+		for(int i = 1; i <= 13; i++) {
 			Card card1 = new Card("スペード", i);
 			Card card2 = new Card("ハート", i);
 			Card card3 = new Card("ダイヤ", i);

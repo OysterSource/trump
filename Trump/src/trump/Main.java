@@ -82,7 +82,7 @@ public class Main {
 		System.out.println("抜かれた数字：" + n);
 	}
 
-	public static void main(String[] args) {
+	public static void main4(String[] args) {
 		System.out.println("hellow");
 		Deck deck = new Deck();
 		deck.build();
@@ -101,5 +101,20 @@ public class Main {
 			System.out.println(z + ":" + "引き分け");
 		} else {
 		}
+	}
+
+	public static void main(String[] args) {
+		System.out.println("hellow");
+		Deck deck = new Deck();
+		deck.build();
+		deck.shuffle();
+
+		Card cardH = deck.draw();
+		Card cardI = deck.draw();
+		Card cardJ = deck.draw();
+		Card cardK = deck.draw();
+		Card cardL = deck.draw();
+		Card Mycard = deck.draw();
+		System.out.println(Mycard.face());
 	}
 }
