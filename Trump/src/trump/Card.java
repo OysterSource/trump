@@ -89,8 +89,8 @@ public class Card {
 
 		if(cardH.mark == cardJ.mark) {
 			return true;
-		} else if(cardH.mark != cardJ.mark) {
-			return true;
+		} else if(cardH.mark != cardK.mark) {
+			return false;
 		} else {
 			return false;
 		}

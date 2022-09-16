@@ -121,14 +121,18 @@ public class Main {
 		System.out.println(cardL.face());
 
 		boolean X = Card.hasOnePair(cardH, cardI, cardJ, cardK, cardL);
-		if(X = true)
+		if(X == true) {
 			System.out.println(X + "=ワンペア成立");
-		else if(X == false) {
+		} else if(X == false) {
 			System.out.println(X + "ワンペア不成立");
 		} else {
-
-			boolean Y = Card.hasTwoPair(cardH, cardI, cardJ, cardK, cardL);
-			System.out.println(Y);
+		}
+		boolean Y = Card.hasTwoPair(cardH, cardI, cardJ, cardK, cardL);
+		if(Y == true) {
+			System.out.println(Y + "=ツーペア成立");
+		} else if(Y == false) {
+			System.out.println(Y + "ツーペア不成立");
+		} else {
 
 		}
 	}
