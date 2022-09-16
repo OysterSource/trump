@@ -87,9 +87,9 @@ public class Card {
 
 	public static boolean hasTwoPair(Card cardH, Card cardI, Card cardJ, Card cardK, Card cardL) {
 
-		if(cardH.mark == cardJ.mark) {
+		if(cardH.number == cardJ.number) {
 			return true;
-		} else if(cardH.mark != cardK.mark) {
+		} else if(cardH.number != cardK.number) {
 			return false;
 		} else {
 			return false;
