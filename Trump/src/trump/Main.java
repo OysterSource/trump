@@ -109,26 +109,27 @@ public class Main {
 		deck.build();
 		deck.shuffle();
 
-		//Card cardH = deck.draw();
-		//Card cardI = deck.draw();
-		//Card cardJ = deck.draw();
-		//Card cardK = deck.draw();
-		//Card cardL = deck.draw();
-		Card cardH = new Card("スペード", 7);
-		Card cardI = new Card("ハート", 4);
-		Card cardJ = new Card("ダイヤ", 4);
-		Card cardK = new Card("クローバー", 0);
-		Card cardL = new Card("ハート", 3);
-
-		boolean X = Card.hasOnePair(cardH, cardI, cardJ, cardK, cardL);
-		System.out.println(X);
-		boolean Y = Card.hasTwoPair(cardH, cardI, cardJ, cardK, cardL);
-		System.out.println(Y);
+		Card cardH = deck.draw();
+		Card cardI = deck.draw();
+		Card cardJ = deck.draw();
+		Card cardK = deck.draw();
+		Card cardL = deck.draw();
 		System.out.println(cardH.face());
 		System.out.println(cardI.face());
 		System.out.println(cardJ.face());
 		System.out.println(cardK.face());
 		System.out.println(cardL.face());
 
+		boolean X = Card.hasOnePair(cardH, cardI, cardJ, cardK, cardL);
+		if(X = true)
+			System.out.println(X + "=ワンペア成立");
+		else if(X == false) {
+			System.out.println(X + "ワンペア不成立");
+		} else {
+
+			boolean Y = Card.hasTwoPair(cardH, cardI, cardJ, cardK, cardL);
+			System.out.println(Y);
+
+		}
 	}
 }
