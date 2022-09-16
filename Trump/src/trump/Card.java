@@ -51,20 +51,25 @@ public class Card {
 		}
 	}
 
-	public static boolean hasOnePair(Card card) {
+	public static boolean hasOnePair(Card cardH, Card cardI, Card cardJ, Card cardK, Card cardL) {
+		if(cardH.number == cardI.number) {
+			return true;
+		}
+		if(cardH.number == cardJ.number) {
+			return true;
+		}
+		if(cardH.number == cardK.number) {
+			return true;
+		}
+		return false;
+
+	}
+
+	public static boolean hasTwoPair(Card card) {
+
 		if(card.mark == card.mark) {
 			return true;
 		} else if(card.mark != card.mark) {
-			return false;
-		} else {
-			return false;
-		}
-	}
-
-	public static boolean hasTwoPair(Card Mycard) {
-		if(Mycard.mark == Mycard.mark) {
-			return true;
-		} else if(Mycard.mark != Mycard.mark) {
 			return true;
 		} else {
 			return false;

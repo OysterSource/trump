@@ -6,4 +6,5 @@
  *
  */
 module Trump {
+	requires java.base;
 }
