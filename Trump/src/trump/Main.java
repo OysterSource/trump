@@ -121,6 +121,9 @@ public class Main {
 		Card cardL = new Card("ハート", 3);
 
 		boolean X = Card.hasOnePair(cardH, cardI, cardJ, cardK, cardL);
+		System.out.println(X);
+		boolean Y = Card.hasTwoPair(cardH, cardI, cardJ, cardK, cardL);
+		System.out.println(Y);
 		System.out.println(cardH.face());
 		System.out.println(cardI.face());
 		System.out.println(cardJ.face());

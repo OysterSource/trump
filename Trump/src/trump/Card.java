@@ -61,15 +61,35 @@ public class Card {
 		if(cardH.number == cardK.number) {
 			return true;
 		}
+		if(cardH.number == cardL.number) {
+			return true;
+		}
+		if(cardI.number == cardJ.number) {
+			return true;
+		}
+		if(cardI.number == cardK.number) {
+			return true;
+		}
+		if(cardI.number == cardL.number) {
+			return true;
+		}
+		if(cardJ.number == cardK.number) {
+			return true;
+		}
+		if(cardJ.number == cardL.number) {
+			return true;
+		}
+		if(cardK.number == cardL.number) {
+			return true;
+		}
 		return false;
-
 	}
 
-	public static boolean hasTwoPair(Card card) {
+	public static boolean hasTwoPair(Card cardH, Card cardI, Card cardJ, Card cardK, Card cardL) {
 
-		if(card.mark == card.mark) {
+		if(cardH.mark == cardJ.mark) {
 			return true;
-		} else if(card.mark != card.mark) {
+		} else if(cardH.mark != cardJ.mark) {
 			return true;
 		} else {
 			return false;
